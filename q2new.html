@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 2</title>
+</head>
+<body>
+    <script>
+        //Use curly brackets to create JSON like JavaScript object 
+        //and add properties and
+        //functions to the object.
+        var student={
+            fname:'Tharushi',//state via property
+            lname:'N Dewangi',
+            age:25,
+            height:178,
+            studentInfor:function()//behavior vir function(studentInfor,fname ew okkoma property studentInfor weda krnne function widihata)
+            {
+                console.log(this.fname + " " +this.lname + " ");
+                document.write(this.fname + " " +this.lname + " ");
+        
+            }
+   }; //{}property and value pair
+   student.studentInfor()    
+        //document.write(student.studentInfor());
+        //joson walanm nm mehema "" tienna ona atribute wala
+        // student.studentInfor();
+        // var student={
+        //     "fname":'Tharushi',
+        //     "lname":'N Dewangi',
+        //     "age":25,
+        //     "height":178,
+        //     studentInfor:function()
+        //     {
+        //         //document.write("i am in the function")
+        //         console.log(this.fname + " " +this.lname + " ");
+        //         document.write(this.fname + " " +this.lname + " ");
+        
+        //     }
+        // };
+        
+            </script>
+</body>
+</html>

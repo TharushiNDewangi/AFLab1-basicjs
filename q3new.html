@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 3</title>
+</head>
+<body>
+    <script>
+        //a. Declare a 
+        //global variable named vehicleName in the window object
+        window.vehicalName = "car";
+        //b. Declare a method named 
+        //printVehicleName to print out the vehicle name.
+        function printvehiclename()
+        {
+            document.write(window.vehicalName);
+        }
+        
+        //c. Declare an object named Vehicle
+        //(using object literal notation) which have a
+       //variable called vehicleName and declare a function 
+       //named getVehicleName and
+       //assign it with the printVehicleName.
+       let vehicle={
+           vehicalName:"Van",
+           getVehicleName:function(){
+               return this.vehicalName
+           }
+       }
+       //d. Execute the printVehicleName function 
+       //and the getVehicleName functions to see
+       //the results.
+       printvehiclename();
+       //e. Correct the getVehicleName to print 
+       //out the global variable vehicleName using
+       //the this keyword
+       document.write("<br>");
+       document.write(vehicle.getVehicleName());
+       document.write("<br>");
+       document.write(this.vehicalName);
+       
+           </script>
+</body>
+</html>

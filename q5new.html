@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 5</title>
+</head>
+<body>
+    <script>
+        //function fetch(input : RequestInfo)
+//Write a function to call JSON Placeholder API
+//(https://jsonplaceholder.typicode.com/posts) and 
+//get users and return the users to the caller.
+
+fetch('https://jsonplaceholder.typicode.com/posts')//API Call
+        .then(function (responce){
+            return responce.json();
+
+        })
+        .then(function (data){
+            console.log(data);
+        })//this is chaning
+        .catch(error => console.log(error));
+  //print karama ekatama print wenne here ekatama function tibbata
+  //print wenne 'here' ehema wenne js asynchroniz nisa
+  //fetch is API.fetch('https://jsonplaceholder.typicode.com/posts')
+  //this function return promise.promise is an object.it has 
+  //property call 'then' it is another function.it accept another
+  //variable function (responce){
+    //        return responce.json();
+
+//} this part vary specific to web API 
+//when we run asynchronize operation, apit promise object hmbenawa
+//itapasse 'then' function of promise object call karama pass karanawa another function
+//this function support to do what u want to do from the output of the
+//asynchronize operation 
+//idially this would have been a function which perform whatever 
+//you want to do output of API call
+//data availabe wela tienner responce wala eth 
+        console.log('here');
+
+
+    </script>
+</body>
+</html>

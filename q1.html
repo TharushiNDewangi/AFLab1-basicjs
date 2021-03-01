@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        //Create a function as a variable (function expression) that prints ‘Hello World’ to console
+//and another function that accepts a variable. The argument passed to the second
+//the function should be executed as a function inside the body. Call the second function
+//passing the first function as the argument. Check the output.
+        
+        let sayhello=function()
+        {
+            console.log("hello world");
+            return "SLIIT";
+            
+        }
+        let accceptmr=function(name)
+        {
+            console.log("Hi"+name);
+        }
+        accceptmr(sayhello());
+        //sayhello();
+
+        
+    </script>
+    
+</body>
+</html>

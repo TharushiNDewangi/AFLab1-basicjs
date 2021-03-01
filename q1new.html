@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 1</title>
+</head>
+<body>
+    <script>
+        //Create a function as a variable (function expression) that prints ‘Hello World’ to console
+//and another function that accepts a variable. The argument passed to the second
+//the function should be executed as a function inside the body. Call the second function
+//passing the first function as the argument. Check the output.
+        // var printhelo =function ()
+        // {
+        //     console.log("hello world");
+        // }
+        // function printer(funcname)
+        // {
+        //    funcname();//calling
+        // }
+        // printer(printhelo);//referring function( passing function as variable)
+        //printer(printhelo());//callin function
+//me widi dekatama pluwn
+        var printhelo =function ()
+        {
+            return function()
+            {
+                console.log("hello world");
+            }
+           
+        }
+        function printer(funcname)
+        {
+           var vv = funcname();//calling
+           vv();
+        }
+        printer(printhelo);//referring function( passing function as variable)
+        //printer(printhelo());//callin function
+       
+
+        
+    </script>
+</body>
+</html>

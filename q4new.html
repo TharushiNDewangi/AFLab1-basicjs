@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 4</title>
+</head>
+<body>
+    <script>
+        //4. Create a separate function using 
+        //JavaScript closure which accepts the tax percentage
+        //and returns a function that accepts the amount and
+        // returns the amount after adding tax
+        //percentage. Try adding tax percentage to 
+        //‘this’ object and check if it works.
+        function taxcalculater(persentage)//1st fun
+        {
+            return function(amount)//second fun
+            {
+                return amount * persentage;
+            }
+
+        }//nexted funtion(api calculaor(200) call kraddi apita nknma 
+        // persentage value ekath enne taxcalculater(persentage) athule nexted
+        //function ekak nisa taxcalculater(persentage) tmi outside function ek calculaor(200)
+        //inside function)
+        //closure means inside(inermediate) function access parent(outside) functions
+        //variables, argument ,context and all. this is enforcing of encapsulation
+        //on javascript apita calculaor(200) call karama aya tax change
+        //karanna ehema bane e kinne e information ek calculaor(200)
+        //function athule hide welane itin encapsulation ne
+        //(intermediate concept)
+
+        var calculaor = taxcalculater(.12);
+        console.log(calculaor(200));
+        //klin sir karapu widiha
+        // let value = (function(){
+        //     let amount =1800;
+        //     let textpersentage = 0.3;
+        //     return function()
+        //     {
+        //         amount = textpersentage*amount+amount
+        //         return amount;
+        //     }
+        // }
+        // )();
+        // //document.write(tax());
+        // document.write(value());
+            </script>
+    
+</body>
+</html>
